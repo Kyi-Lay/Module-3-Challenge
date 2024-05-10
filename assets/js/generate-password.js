@@ -12,7 +12,7 @@ generatePassword = function() {
   let generatePopup;
   let upper;
   let lower;
-  let number;
+  let numbers;
   let special;
 
   // Prompts to get user preferences...
@@ -33,7 +33,7 @@ while (!generatePopup || generatePopup < 8 || generatePopup > 128) {
 if (generatePopup) {
   upper = confirm("Do you want UPPER letters?");
   lower = confirm("Do you want lower letters?");
-  number = confirm("Do you want numbers");
+  numbers = confirm("Do you want numbers");
   special = confirm("Do you want special?");
 }
 
