@@ -57,7 +57,7 @@ if (special) userSelection += "!@#$%^&*()=+-_{}][?<>\/";
 
 let password = "";
 for (let i = 0; 1 < generatePopup; i ++) {
-  var randomIndex = Math.floor(Math,random() * userSelection.length);
+  var randomIndex = Math.floor(Math.random() * userSelection.length);
   passwoed += userSelection.charAt;(randomIndex);
 }
 
@@ -168,4 +168,60 @@ return password; // Return the generated password string
 //       const generatedPassword = generatePassword();
 //       passwordInput.value = generatedPassword;
 //     });
+
+
+
+
+// function generatePassword() {
+//   let generatePopup;
+//   let upper;
+//   let lower;
+//   let numbers;
+//   let special;
+
+//   generatePopup = parseInt(prompt("How many characters long do you want your password to be? Please enter a numeric value between 8 and 128"));
+//   while (!generatePopup || generatePopup < 8 || generatePopup > 128) {
+//     alert("Please enter a number between 8 and 128");
+//     generatePopup = parseInt(prompt("How many characters long do you want your password to be? Please enter a numeric value between 8 and 128."));
+//   }
+
+//   if (generatePopup) {
+//     upper = confirm("Do you want UPPER letters?");
+//     lower = confirm("Do you want lower letters?");
+//     numbers = confirm("Do you want numbers?");
+//     special = confirm("Do you want special characters?");
+//   }
+
+//   if (!upper && !lower && !numbers && !special) {
+//     alert("You entered no values, we can't make a password without values!");
+//     return ""; // Return an empty string if no options are selected
+//   }
+
+//   let userSelection = "";
+
+//   // Constructing the user selection based on preferences
+//   if (upper) userSelection += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   if (lower) userSelection += "abcdefghijklmnopqrstuvwxyz";
+//   if (numbers) userSelection += "0123456789";
+//   if (special) userSelection += "!@#$%^&*()=+-_{}][?<>\/"; 
+
+//   let password = "";
+//   for (let i = 0; i < generatePopup; i++) {
+//     var randomIndex = Math.floor(Math.random() * userSelection.length);
+//     password += userSelection.charAt(randomIndex);
+//   }
+
+//   console.log(password); // log the generated password
+//   return password; // Return the generated password string
+// }
+
+// var generateBtn = document.getElementById("generateButton");
+// generateBtn.addEventListener("click", writePassword);
+
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.getElementById("passwort");
+//   passwordText.value = password;
+// }
+
     
